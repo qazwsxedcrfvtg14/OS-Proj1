@@ -1,0 +1,20 @@
+Run: P1 500 unit
+[1A[0KRun: P1 1000 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+[P1] pid: 8684 1556184757.356676636 1556184770.181971082 12.825294446 
+Run: P2 500 unit
+[1A[0KRun: P2 1000 unit
+[1A[0KRun: P2 1500 unit
+[1A[0KRun: P2 2000 unit
+[P2] pid: 8685 1556184759.079399466 1556184773.618745949 14.539346483 
