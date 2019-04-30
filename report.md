@@ -10,8 +10,9 @@ OS project1 report
 * schedule每隔一段時間會把執行權從process那裡收回來，然後再依照情況分給processes。
 
 ## 2. 執行範例測資的結果
-https://github.com/qazwsxedcrfvtg14/OS-Proj1/blob/master/dmesg
-https://github.com/qazwsxedcrfvtg14/OS-Proj1/tree/master/OS_PJ1_Test
+
+https://github.com/qazwsxedcrfvtg14/OS-Proj1/blob/master/dmesg  
+https://github.com/qazwsxedcrfvtg14/OS-Proj1/tree/master/OS_PJ1_Test  
 ```
 FIFO_1
 P1 26427
