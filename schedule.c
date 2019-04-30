@@ -67,11 +67,15 @@ void proc_insert(int policy, process *P){
     waiting_top++;
 }
 
-void proc_swap_end(){
-    for(int i=1;i<waiting_top;i++)
-        swap(waiting[i-1],waiting[i]);
-    if(waiting[waiting_top-1]==NULL)
-        waiting_top--,proc_fin++;
+void proc_swap_end(int policy){
+    if(policy!=PSJF||waiting[0]->ex_time==0)
+        for(int i=1;i<waiting_top;i++)
+            swap(waiting[i-1],waiting[i]);
+    if(waiting[waiting_top-1]->ex_time==0){
+        waiting[waiting_top-1]=NULL;
+        waiting_top--;
+        proc_fin++;
+    }
 }
 
 int proc_exec(int policy){
@@ -81,8 +85,6 @@ int proc_exec(int policy){
         case SJF:
             length=waiting[0]->ex_time;
             waiting[0]->ex_time=0;
-            waiting[0]=NULL;
-            proc_swap_end();
             break;
         case RR:
             if(waiting[0]->ex_time>TIME_QUANTUM){
@@ -92,19 +94,13 @@ int proc_exec(int policy){
             else{
                 length=waiting[0]->ex_time;
                 waiting[0]->ex_time=0;
-                waiting[0]=NULL;
             }
-            proc_swap_end();
             break;
         case PSJF:
             length=TIME_UNIT;
             if(length>waiting[0]->ex_time)
                 length=waiting[0]->ex_time;
             waiting[0]->ex_time-=length;
-            if(waiting[0]->ex_time==0){
-                waiting[0]=NULL;
-                proc_swap_end();
-            }
             break;
         default:
             length=0;
@@ -195,8 +191,14 @@ int main(){
         }
         else{
             if(ex_length==0){
-                if(running_id!=waiting[0]->ID)tot_length=0;
-                else fprintf(stderr,"\e[1A\e[0K\r");
+                if(~running_id)
+                    proc_swap_end(policy);
+                if(waiting[0]==NULL)
+                    continue;
+                if(running_id!=waiting[0]->ID)
+                    tot_length=0;
+                else
+                    fprintf(stderr,"\e[1A\e[0K\r");
                 running_id=waiting[0]->ID;
                 ex_length=proc_exec(policy);
                 tot_length+=ex_length;

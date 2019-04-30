@@ -1,0 +1,66 @@
+Run: P1 500 unit
+[1A[0KRun: P1 1000 unit
+[1A[0KRun: P1 1500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P3 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P3 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P6 500 unit
+Run: P3 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P6 500 unit
+Run: P3 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P6 500 unit
+Run: P3 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P6 500 unit
+Run: P3 500 unit
+[P3] pid: 26579 1556630597.882343990 1556630635.135948609 37.253604619 
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P1 500 unit
+[P1] pid: 26577 1556630589.910472589 1556630639.124553674 49.214081085 
+Run: P2 500 unit
+[P2] pid: 26578 1556630593.897375537 1556630640.458112218 46.560736681 
+Run: P6 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P6 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P6 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P6 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P6 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P6 500 unit
+[P6] pid: 26582 1556630608.521037802 1556630661.723915903 53.202878101 
+Run: P4 500 unit
+Run: P5 500 unit
+Run: P4 500 unit
+Run: P5 500 unit
+[P5] pid: 26581 1556630604.533556837 1556630667.031623704 62.498066867 
+Run: P4 500 unit
+[1A[0KRun: P4 1000 unit
+[P4] pid: 26580 1556630603.206119931 1556630669.687858078 66.481738147 

@@ -1,0 +1,20 @@
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+Run: P2 500 unit
+Run: P1 500 unit
+[P1] pid: 26566 1556630562.731121224 1556630582.665999703 19.934878479 
+Run: P2 500 unit
+[1A[0KRun: P2 1000 unit
+[1A[0KRun: P2 1500 unit
+[P2] pid: 26567 1556630564.060055065 1556630586.652503375 22.592448310 
