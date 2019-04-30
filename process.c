@@ -33,11 +33,11 @@ int main(int argc, char* argv[]){
     long long end_time=cur_time();
     long long d_time=end_time-start_time;
 
-    printf("[%s] pid: %d ",name,pid);
-    printf("%lld.%09lld ",start_time/1000000000ll, start_time%1000000000ll);
-    printf("%lld.%09lld ",end_time/1000000000ll, end_time%1000000000ll);
-    printf("%lld.%09lld ",d_time/1000000000ll, d_time%1000000000ll);
-    puts("");
+    fprintf(stderr,"[%s] pid: %d ",name,pid);
+    fprintf(stderr,"%lld.%09lld ",start_time/1000000000ll, start_time%1000000000ll);
+    fprintf(stderr,"%lld.%09lld ",end_time/1000000000ll, end_time%1000000000ll);
+    fprintf(stderr,"%lld.%09lld ",d_time/1000000000ll, d_time%1000000000ll);
+    fprintf(stderr,"\n");
 
     FILE* f=fopen("/dev/kmsg", "a");
     fprintf(f,"[Project1] %d %lld.%09lld %lld.%09lld\n",pid,start_time/1000000000ll, start_time%1000000000ll,end_time/1000000000ll, end_time%1000000000ll);

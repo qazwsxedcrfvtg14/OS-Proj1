@@ -182,6 +182,7 @@ int main(){
                     exit(EXIT_FAILURE);
                 }
             }
+            printf("%s %d\n",pool[pnum].name,pid);
             sched_yield();
             pids[pool[pnum].ID]=pid;
             proc_insert(policy,&pool[pnum]);
